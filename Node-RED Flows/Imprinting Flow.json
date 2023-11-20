@@ -1,0 +1,1612 @@
+[
+    {
+        "id": "5f7d39e9241817ea",
+        "type": "tab",
+        "label": "Imprint Process ",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "66ee26d0d8292ecc",
+        "type": "tab",
+        "label": "example EJBCA Nodes",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "ac0cbed14a970555",
+        "type": "group",
+        "z": "5f7d39e9241817ea",
+        "name": "Local PKI REST Interface",
+        "style": {
+            "fill": "#d1d1d1",
+            "label": true,
+            "color": "#ffffff"
+        },
+        "nodes": [
+            "f28630d2998a8346",
+            "e966857c9265a39d",
+            "29fe8904ed05f409",
+            "9246414912850c6e",
+            "8b63ae387e50e54b",
+            "91824d66a175e48b",
+            "a4d3d042399dd782",
+            "24b71bdd0e4b0023",
+            "ea64b007e0c55ce0",
+            "05880cce32c67175",
+            "657d5083207976f7"
+        ],
+        "x": 934,
+        "y": 779,
+        "w": 792,
+        "h": 242
+    },
+    {
+        "id": "26289c883315097d",
+        "type": "group",
+        "z": "5f7d39e9241817ea",
+        "name": "Wait for Device in Perso-Station",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#3f3f3f",
+            "stroke": "#addb7b"
+        },
+        "nodes": [
+            "eb9a1af1bcc990ca",
+            "798db904fd93b018",
+            "97b20e9f0a224c8f",
+            "39fc51c069dff790",
+            "03dda680f2fca8f0",
+            "5c901461f9fc4f45",
+            "863954a8d440bdec",
+            "e561283e69188a20",
+            "e303151c6fecacd0"
+        ],
+        "x": 114,
+        "y": 299,
+        "w": 1112,
+        "h": 202
+    },
+    {
+        "id": "298cf514a4689326",
+        "type": "group",
+        "z": "5f7d39e9241817ea",
+        "name": "Trigger new personalization",
+        "style": {
+            "stroke": "#addb7b",
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "34bfc9f0b2ecc2af",
+            "67e0f57d28ae1ab6",
+            "91a5a2f82d9fe44e",
+            "f437bf3def065142"
+        ],
+        "x": 114,
+        "y": 99,
+        "w": 832,
+        "h": 162
+    },
+    {
+        "id": "cdafa2b9cff86370",
+        "type": "group",
+        "z": "5f7d39e9241817ea",
+        "name": "gen CSR",
+        "style": {
+            "stroke": "#addb7b",
+            "fill": "#e3f3d3",
+            "label": true,
+            "color": "#3f3f3f"
+        },
+        "nodes": [
+            "4d5e0ac4a98f7aef",
+            "7edaa4f1b3db497c",
+            "9ce0ed31f895cc41",
+            "09bf05469fe77e61",
+            "f73b6d7382d78378",
+            "e99799ecdd7e1d90",
+            "e82c5330cd18b87e",
+            "5c0126f27808d22c"
+        ],
+        "x": 114,
+        "y": 539,
+        "w": 1112,
+        "h": 222
+    },
+    {
+        "id": "e5b691810c882401",
+        "type": "group",
+        "z": "5f7d39e9241817ea",
+        "name": "ERROR Handler",
+        "style": {
+            "stroke": "#ff7f7f",
+            "fill": "#ffbfbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "72b1af957da64544",
+            "b0934b5f8d7fe1fc",
+            "227a5d712ec61ee5"
+        ],
+        "x": 1274,
+        "y": 99,
+        "w": 512,
+        "h": 122
+    },
+    {
+        "id": "188f40f59860529d",
+        "type": "group",
+        "z": "5f7d39e9241817ea",
+        "name": "DevID final",
+        "style": {
+            "fill": "#e3f3d3",
+            "label": true,
+            "stroke": "#addb7b"
+        },
+        "nodes": [
+            "6d3990fbe2cc690d",
+            "8f543e6421e41050",
+            "575790689391c8bc",
+            "9605d88cd5dee59c",
+            "200d1047567623db",
+            "6beccf3235dc1135"
+        ],
+        "x": 934,
+        "y": 1039,
+        "w": 952,
+        "h": 213.4285888671875
+    },
+    {
+        "id": "df246a07278de106",
+        "type": "ui_tab",
+        "name": "PersoStatus",
+        "icon": "fa-linode",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9ae98ea7e3754913",
+        "type": "ui_group",
+        "name": "PKI",
+        "tab": "df246a07278de106",
+        "order": 2,
+        "disp": true,
+        "width": 5,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b001a79369829d45",
+        "type": "ui_group",
+        "name": "Device",
+        "tab": "df246a07278de106",
+        "order": 1,
+        "disp": true,
+        "width": "5",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "172be81ee7864914",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "faba41230351895c",
+        "type": "tls-config",
+        "name": "Local CA Connection",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "RESTAdmin.crt",
+        "keyname": "RESTAdmin.key",
+        "caname": "LocalCA.pem",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "af9996cf595e7843",
+        "type": "ejbca-config-3",
+        "name": "local CA",
+        "ejbcaConf": "{\n    \"subjects\": [\n        {\n            \"property\": \"CN\",\n            \"prop_value\": \"\",\n            \"prop_required\": true,\n            \"prop_modifiable\": true\n        },\n        {\n            \"property\": \"O\",\n            \"prop_value\": \"PrimeOne\",\n            \"prop_required\": false,\n            \"prop_modifiable\": true\n        },\n        {\n            \"property\": \"OU\",\n            \"prop_value\": \"ProductionLine1\",\n            \"prop_required\": false,\n            \"prop_modifiable\": true\n        },\n        {\n            \"property\": \"serialNumber\",\n            \"prop_value\": \"\",\n            \"prop_required\": true,\n            \"prop_modifiable\": true\n        },\n        {\n            \"property\": \"C\",\n            \"prop_value\": \"D\",\n            \"prop_required\": false,\n            \"prop_modifiable\": true\n        }\n    ],\n    \"subject_alternative_names\": [],\n    \"profile\": {\n        \"hostname\": \"ejbca-node1\",\n        \"certificate_profile_name\": \"PO-CP-IDevID\",\n        \"end_entity_profile_name\": \"PO-EE-IDevID\",\n        \"certificate_authority_name\": \"PO-ISSUING-CA\",\n        \"username\": {\n            \"value\": \"\",\n            \"auto_generated\": false\n        },\n        \"enrollment_code\": {\n            \"required\": true,\n            \"auto_generated\": false,\n            \"minimum_bits\": 0\n        },\n        \"mail\": {\n            \"use\": true,\n            \"required\": false,\n            \"modifiable\": false\n        }\n    }\n}"
+    },
+    {
+        "id": "4eedf14773d23515",
+        "type": "ejbca-config-3",
+        "name": "KF-CS-ShowcaseRobot-MQTT-Client-EndEntity",
+        "ejbcaConf": "{\n    \"subjects\": [\n        {\n            \"property\": \"CN\",\n            \"value\": \"\",\n            \"required\": true,\n            \"modifiable\": true\n        },\n        {\n            \"property\": \"O\",\n            \"value\": \"Campus Schwarzwald\",\n            \"required\": true,\n            \"modifiable\": false\n        },\n        {\n            \"property\": \"OU\",\n            \"value\": \"Showcase Robot\",\n            \"required\": true,\n            \"modifiable\": false\n        },\n        {\n            \"property\": \"C\",\n            \"value\": \"DE\",\n            \"required\": true,\n            \"modifiable\": false\n        }\n    ],\n    \"subject_alternative_names\": [\n    ],\n    \"profile\": {\n        \"hostname\": \"campuspki.germanywestcentral.cloudapp.azure.com\",\n        \"certificate_profile_name\": \"KF-CS-ShowcaseRobot-MQTT-CertProfile\",\n        \"end_entity_profile_name\": \"KF-CS-ShowcaseRobot-MQTT-Client-EndEntity\",\n        \"certificate_authority_name\": \"KS-CS-ShowcaseRobot-MQTT-CA\",\n        \"username\": {\n            \"value\": \"\",\n            \"auto_generated\": false\n        },\n        \"enrollment_code\": {\n            \"required\": true,\n            \"auto_generated\": false,\n            \"minimum_bits\": 0\n        },\n        \"mail\": {\n            \"use\": true,\n            \"required\": false,\n            \"modifiable\": false\n        }\n    }\n}"
+    },
+    {
+        "id": "f28630d2998a8346",
+        "type": "http request",
+        "z": "5f7d39e9241817ea",
+        "g": "ac0cbed14a970555",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "faba41230351895c",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1430,
+        "y": 880,
+        "wires": [
+            [
+                "05880cce32c67175"
+            ]
+        ]
+    },
+    {
+        "id": "e966857c9265a39d",
+        "type": "inject",
+        "z": "5f7d39e9241817ea",
+        "g": "ac0cbed14a970555",
+        "name": "Status Request",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1070,
+        "y": 880,
+        "wires": [
+            [
+                "29fe8904ed05f409"
+            ]
+        ]
+    },
+    {
+        "id": "29fe8904ed05f409",
+        "type": "change",
+        "z": "5f7d39e9241817ea",
+        "g": "ac0cbed14a970555",
+        "name": "PKI Status",
+        "rules": [
+            {
+                "t": "set",
+                "p": "method",
+                "pt": "msg",
+                "to": "get",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "https://ejbca-node1/ejbca/ejbca-rest-api/v1/certificate/status",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1250,
+        "y": 880,
+        "wires": [
+            [
+                "f28630d2998a8346"
+            ]
+        ]
+    },
+    {
+        "id": "eb9a1af1bcc990ca",
+        "type": "http request",
+        "z": "5f7d39e9241817ea",
+        "g": "26289c883315097d",
+        "name": "",
+        "method": "use",
+        "ret": "bin",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 890,
+        "y": 460,
+        "wires": [
+            [
+                "97b20e9f0a224c8f"
+            ]
+        ]
+    },
+    {
+        "id": "798db904fd93b018",
+        "type": "change",
+        "z": "5f7d39e9241817ea",
+        "g": "26289c883315097d",
+        "name": "GET Status ",
+        "rules": [
+            {
+                "t": "set",
+                "p": "method",
+                "pt": "msg",
+                "to": "GET",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "192.168.0.56/v1/DevID/status",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "headers.Content-Type",
+                "pt": "msg",
+                "to": "application/json",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 670,
+        "y": 460,
+        "wires": [
+            [
+                "eb9a1af1bcc990ca"
+            ]
+        ]
+    },
+    {
+        "id": "4d5e0ac4a98f7aef",
+        "type": "function",
+        "z": "5f7d39e9241817ea",
+        "g": "cdafa2b9cff86370",
+        "name": "Gen. Dev. Message",
+        "func": "var message = flow.get(\"cachedPayload\")\nvar org = message.subject_companyName;\nvar cn = message.subject_serialNumber;\nvar sn = message.subject_serialNumber;\nvar uri = message.subject_uri;\n\nmsg.payload = {\n    \"CN\": \"\",\n    \"O\": \"127.0.0.1\",\n    \"SN\":\"0\",\n    \"URI\": \"//\"\n};\nmsg.payload.O = org;\nmsg.payload.CN = cn;\nmsg.payload.URI = uri; \nmsg.payload.SN = sn;\n\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 620,
+        "wires": [
+            [
+                "9ce0ed31f895cc41"
+            ]
+        ]
+    },
+    {
+        "id": "7edaa4f1b3db497c",
+        "type": "debug",
+        "z": "5f7d39e9241817ea",
+        "g": "cdafa2b9cff86370",
+        "name": "Device CSR",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "97b20e9f0a224c8f",
+        "type": "debug",
+        "z": "5f7d39e9241817ea",
+        "g": "26289c883315097d",
+        "name": "Devise Status",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "03dda680f2fca8f0",
+        "type": "delay",
+        "z": "5f7d39e9241817ea",
+        "g": "26289c883315097d",
+        "name": "Delay ",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 450,
+        "y": 460,
+        "wires": [
+            [
+                "798db904fd93b018"
+            ]
+        ]
+    },
+    {
+        "id": "5c901461f9fc4f45",
+        "type": "function",
+        "z": "5f7d39e9241817ea",
+        "g": "26289c883315097d",
+        "name": "Device Status ",
+        "func": "if(msg.payload > 0)\n{\n    node.status({ fill: \"green\", text: \"ONE\" });\n    if (context.get(\"ALLOW\") == 1) {\n        return;\n    }\n    if (flow.get(\"cachedPayload\"))\n    {\n        context.set(\"ALLOW\", 1);\n        return msg;\n    }\n    return;\n}\nif (msg.payload == false)\n{\n    context.set(\"ALLOW\", 0);\n    node.status({});\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 400,
+        "wires": [
+            [
+                "863954a8d440bdec"
+            ]
+        ]
+    },
+    {
+        "id": "863954a8d440bdec",
+        "type": "switch",
+        "z": "5f7d39e9241817ea",
+        "g": "26289c883315097d",
+        "name": "Ready to Start",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gt",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 680,
+        "y": 400,
+        "wires": [
+            [
+                "03dda680f2fca8f0"
+            ]
+        ]
+    },
+    {
+        "id": "9ce0ed31f895cc41",
+        "type": "change",
+        "z": "5f7d39e9241817ea",
+        "g": "cdafa2b9cff86370",
+        "name": "POST genCSR",
+        "rules": [
+            {
+                "t": "set",
+                "p": "method",
+                "pt": "msg",
+                "to": "POST",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "192.168.0.56/v1/DevID/genCSR",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 620,
+        "wires": [
+            [
+                "09bf05469fe77e61",
+                "7edaa4f1b3db497c"
+            ]
+        ]
+    },
+    {
+        "id": "09bf05469fe77e61",
+        "type": "http request",
+        "z": "5f7d39e9241817ea",
+        "g": "cdafa2b9cff86370",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 870,
+        "y": 620,
+        "wires": [
+            [
+                "e82c5330cd18b87e",
+                "e99799ecdd7e1d90"
+            ]
+        ]
+    },
+    {
+        "id": "f73b6d7382d78378",
+        "type": "function",
+        "z": "5f7d39e9241817ea",
+        "g": "cdafa2b9cff86370",
+        "name": "Make json  CertReq",
+        "func": "\nvar csr = msg.payload.cleanedCSR;\nmsg.payload = {\n    \"certificate_request\": \"\",\n    \"certificate_profile_name\":\"PO-CP-IDevID\",\n    \"end_entity_profile_name\":\"PO-EE-IDevID\",\n    \"certificate_authority_name\": \"PO-ISSUING-CA\",\n    \"username\": \"DevID01\",\n    \"password\": \"foo123\"\n};\nmsg.payload.certificate_request = csr;\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 720,
+        "wires": [
+            [
+                "9246414912850c6e"
+            ]
+        ]
+    },
+    {
+        "id": "e99799ecdd7e1d90",
+        "type": "debug",
+        "z": "5f7d39e9241817ea",
+        "g": "cdafa2b9cff86370",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1120,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "8b63ae387e50e54b",
+        "type": "http request",
+        "z": "5f7d39e9241817ea",
+        "g": "ac0cbed14a970555",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "faba41230351895c",
+        "persist": true,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1430,
+        "y": 980,
+        "wires": [
+            [
+                "a4d3d042399dd782",
+                "6d3990fbe2cc690d"
+            ]
+        ]
+    },
+    {
+        "id": "9246414912850c6e",
+        "type": "change",
+        "z": "5f7d39e9241817ea",
+        "g": "ac0cbed14a970555",
+        "name": "P10Enroll",
+        "rules": [
+            {
+                "t": "set",
+                "p": "method",
+                "pt": "msg",
+                "to": "post",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "https://ejbca-node1/ejbca/ejbca-rest-api/v1/certificate/pkcs10enroll",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "headers.Content-Type",
+                "pt": "msg",
+                "to": "application/json",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "headers.Accept",
+                "pt": "msg",
+                "to": "application/json",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "headers.content-type",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "headers.content-length",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "topic",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 980,
+        "wires": [
+            [
+                "8b63ae387e50e54b",
+                "91824d66a175e48b"
+            ]
+        ]
+    },
+    {
+        "id": "a4d3d042399dd782",
+        "type": "debug",
+        "z": "5f7d39e9241817ea",
+        "g": "ac0cbed14a970555",
+        "name": "Message",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1620,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "91824d66a175e48b",
+        "type": "debug",
+        "z": "5f7d39e9241817ea",
+        "g": "ac0cbed14a970555",
+        "name": "P10 message",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1260,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "e82c5330cd18b87e",
+        "type": "function",
+        "z": "5f7d39e9241817ea",
+        "g": "cdafa2b9cff86370",
+        "name": "clean CSR",
+        "func": "\n\nfunction cleanUpCSR(csr) {\n  const header = \"-----BEGIN CERTIFICATE REQUEST-----\";\n  const footer = \"-----END CERTIFICATE REQUEST-----\";\n\n  // Find the index of the \"-----END CERTIFICATE REQUEST-----\" line\n  const endOfCSRIndex = csr.indexOf(footer);\n\n  // If the \"-----END CERTIFICATE REQUEST-----\" line is found, remove everything after it\n  if (endOfCSRIndex !== -1) {\n    csr = csr.substring(0, endOfCSRIndex + footer.length);\n  }\n\n\n\n  return csr;\n}\n\nvar originalCSR = msg.payload;\n\nconst payload = {};\n\npayload.originalCSR = originalCSR;\npayload.cleanedCSR = cleanUpCSR(originalCSR);\n\nmsg.payload = payload;\n\nreturn msg\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 720,
+        "wires": [
+            [
+                "f73b6d7382d78378"
+            ]
+        ]
+    },
+    {
+        "id": "34bfc9f0b2ecc2af",
+        "type": "http in",
+        "z": "5f7d39e9241817ea",
+        "g": "298cf514a4689326",
+        "name": "",
+        "url": "/v1/newproduction",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 140,
+        "wires": [
+            [
+                "91a5a2f82d9fe44e"
+            ]
+        ]
+    },
+    {
+        "id": "67e0f57d28ae1ab6",
+        "type": "debug",
+        "z": "5f7d39e9241817ea",
+        "g": "298cf514a4689326",
+        "name": "Message Data in global Buffer",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 770,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "91a5a2f82d9fe44e",
+        "type": "function",
+        "z": "5f7d39e9241817ea",
+        "g": "298cf514a4689326",
+        "name": "Get Data and Store global",
+        "func": "var payloadData = msg.payload;\nflow.set(\"cachedPayload\", payloadData);\nflow.set(\"msgPending\",true);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 140,
+        "wires": [
+            [
+                "67e0f57d28ae1ab6"
+            ]
+        ]
+    },
+    {
+        "id": "f437bf3def065142",
+        "type": "inject",
+        "z": "5f7d39e9241817ea",
+        "g": "298cf514a4689326",
+        "name": "Json Order messag",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"Produced\":false,\"Released\":true,\"subject_ipAddress\":\"192.168.3.199\",\"subject_companyName\":\"Campus Schwarzwald\",\"subject_uri\":\"https://example.com\",\"OrderId\":\"QB6Z89LF\",\"ReleaseDate\":{\"_seconds\":0,\"_nanoseconds\":0},\"subject_country\":\"DE\",\"ProducedDate\":{\"_seconds\":0,\"_nanoseconds\":0},\"OrderDate\":{\"_seconds\":1690201234,\"_nanoseconds\":429000000},\"subject_publicKey\":\"EMPTY\",\"OrderType\":1,\"subject_serialNumber\":\"1-ev8DpE0WaJ\",\"subject_commonName\":\"EMPTY\",\"timestamp\":{\"_seconds\":1690201234,\"_nanoseconds\":429000000},\"document_id\":\"bPfm2g9HbYACSXFQ386P\",\"OrderType_str\":\"Basic\",\"opc_node\":\"ns=4;i=2;datatype=Boolean\"}",
+        "payloadType": "json",
+        "x": 250,
+        "y": 220,
+        "wires": [
+            [
+                "91a5a2f82d9fe44e"
+            ]
+        ]
+    },
+    {
+        "id": "72b1af957da64544",
+        "type": "catch",
+        "z": "5f7d39e9241817ea",
+        "g": "e5b691810c882401",
+        "name": "catch Error to reset Buffer",
+        "scope": null,
+        "uncaught": false,
+        "x": 1410,
+        "y": 140,
+        "wires": [
+            [
+                "b0934b5f8d7fe1fc",
+                "227a5d712ec61ee5"
+            ]
+        ]
+    },
+    {
+        "id": "b0934b5f8d7fe1fc",
+        "type": "function",
+        "z": "5f7d39e9241817ea",
+        "g": "e5b691810c882401",
+        "name": "function 3",
+        "func": "flow.set(\"cachedPayload\", null);\nflow.set(\"msgPending\",false);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1640,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5c0126f27808d22c",
+        "type": "complete",
+        "z": "5f7d39e9241817ea",
+        "g": "cdafa2b9cff86370",
+        "name": "Wait if Device ready",
+        "scope": [
+            "eb9a1af1bcc990ca"
+        ],
+        "uncaught": false,
+        "x": 230,
+        "y": 620,
+        "wires": [
+            [
+                "4d5e0ac4a98f7aef"
+            ]
+        ]
+    },
+    {
+        "id": "e303151c6fecacd0",
+        "type": "function",
+        "z": "5f7d39e9241817ea",
+        "g": "26289c883315097d",
+        "name": "Test if Device online",
+        "func": "var value = msg.payload;\nif(value>0)\n    msg.payload = \"online\";\nelse\n    msg.payload = \"offline\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 340,
+        "wires": [
+            [
+                "e561283e69188a20"
+            ]
+        ]
+    },
+    {
+        "id": "05880cce32c67175",
+        "type": "function",
+        "z": "5f7d39e9241817ea",
+        "g": "ac0cbed14a970555",
+        "name": "Rsp Code",
+        "func": "var value = msg.statusCode;\nvar off = \"offline\";\nvar on = \"online\"\nif(value == 200)\n    msg.payload = on;\nelse\n    msg.payload = off;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1620,
+        "y": 880,
+        "wires": [
+            [
+                "ea64b007e0c55ce0"
+            ]
+        ]
+    },
+    {
+        "id": "657d5083207976f7",
+        "type": "inject",
+        "z": "5f7d39e9241817ea",
+        "g": "ac0cbed14a970555",
+        "name": "RESET LED",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "offline",
+        "payloadType": "str",
+        "x": 1430,
+        "y": 820,
+        "wires": [
+            [
+                "ea64b007e0c55ce0"
+            ]
+        ]
+    },
+    {
+        "id": "227a5d712ec61ee5",
+        "type": "debug",
+        "z": "5f7d39e9241817ea",
+        "g": "e5b691810c882401",
+        "name": "ERROR Handler",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1660,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6d3990fbe2cc690d",
+        "type": "function",
+        "z": "5f7d39e9241817ea",
+        "g": "188f40f59860529d",
+        "name": "gen DevID Message",
+        "func": "var rsp = msg.payload;\n\nmsg.payload = {\n    \"DevID\": \"\"\n};\nmsg.payload.DevID = rsp.certificate;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 1080,
+        "wires": [
+            [
+                "8f543e6421e41050",
+                "6beccf3235dc1135"
+            ]
+        ]
+    },
+    {
+        "id": "8f543e6421e41050",
+        "type": "change",
+        "z": "5f7d39e9241817ea",
+        "g": "188f40f59860529d",
+        "name": "POST DevID final",
+        "rules": [
+            {
+                "t": "set",
+                "p": "method",
+                "pt": "msg",
+                "to": "POST",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "url",
+                "pt": "msg",
+                "to": "192.168.0.56/v1/DevID/DevIDfinal",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1330,
+        "y": 1080,
+        "wires": [
+            [
+                "575790689391c8bc"
+            ]
+        ]
+    },
+    {
+        "id": "575790689391c8bc",
+        "type": "http request",
+        "z": "5f7d39e9241817ea",
+        "g": "188f40f59860529d",
+        "name": "",
+        "method": "use",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1570,
+        "y": 1080,
+        "wires": [
+            [
+                "9605d88cd5dee59c",
+                "200d1047567623db"
+            ]
+        ]
+    },
+    {
+        "id": "9605d88cd5dee59c",
+        "type": "debug",
+        "z": "5f7d39e9241817ea",
+        "g": "188f40f59860529d",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1780,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "200d1047567623db",
+        "type": "function",
+        "z": "5f7d39e9241817ea",
+        "g": "188f40f59860529d",
+        "name": "Clean Cache",
+        "func": "flow.set(\"cachedPayload\", null);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1790,
+        "y": 1160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6beccf3235dc1135",
+        "type": "debug",
+        "z": "5f7d39e9241817ea",
+        "g": "188f40f59860529d",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1511.4285888671875,
+        "y": 1211.4285888671875,
+        "wires": []
+    },
+    {
+        "id": "90b684b78cb287ef",
+        "type": "config",
+        "z": "5f7d39e9241817ea",
+        "name": "",
+        "properties": [
+            {
+                "p": "cachedPayload",
+                "pt": "flow",
+                "to": "null",
+                "tot": "json"
+            },
+            {
+                "p": "msgPending",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "active": true,
+        "x": 190,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "24b71bdd0e4b0023",
+        "type": "ui_button",
+        "z": "5f7d39e9241817ea",
+        "g": "ac0cbed14a970555",
+        "name": "",
+        "group": "9ae98ea7e3754913",
+        "order": 1,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Get PKI Status",
+        "tooltip": "Test if PKI is availbel ",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 1040,
+        "y": 820,
+        "wires": [
+            [
+                "29fe8904ed05f409"
+            ]
+        ]
+    },
+    {
+        "id": "e561283e69188a20",
+        "type": "ui_led",
+        "z": "5f7d39e9241817ea",
+        "g": "26289c883315097d",
+        "order": 1,
+        "group": "b001a79369829d45",
+        "width": 5,
+        "height": 1,
+        "label": "Device  Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#a9a9a9",
+                "value": "offline",
+                "valueType": "str"
+            },
+            {
+                "color": "#00f900",
+                "value": "online",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1030,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "ea64b007e0c55ce0",
+        "type": "ui_led",
+        "z": "5f7d39e9241817ea",
+        "g": "ac0cbed14a970555",
+        "order": 2,
+        "group": "9ae98ea7e3754913",
+        "width": 5,
+        "height": 1,
+        "label": "PKI  Status",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#a9a9a9",
+                "value": "offline",
+                "valueType": "str"
+            },
+            {
+                "color": "#00f900",
+                "value": "online",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 1650,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "39fc51c069dff790",
+        "type": "ping",
+        "z": "5f7d39e9241817ea",
+        "g": "26289c883315097d",
+        "protocol": "Automatic",
+        "mode": "timed",
+        "name": "Wait for Device in Network",
+        "host": "192.168.0.56",
+        "timer": "2",
+        "inputs": 0,
+        "x": 250,
+        "y": 400,
+        "wires": [
+            [
+                "5c901461f9fc4f45",
+                "e303151c6fecacd0"
+            ]
+        ]
+    },
+    {
+        "id": "1c4bf734a01f9476",
+        "type": "configure-entity",
+        "z": "66ee26d0d8292ecc",
+        "name": "Local IDevIDCA ",
+        "ejbcaConfig": "af9996cf595e7843",
+        "CN": "DeviceID02",
+        "O": "Campus Schwarzwald",
+        "OU": "Showcase Robot",
+        "C": "DE",
+        "L": "",
+        "ST": "",
+        "postalCode": "",
+        "streetAdress": "",
+        "serialNumber": "DeviceID01123123123",
+        "emailAdress": "",
+        "givenName": "",
+        "surName": "",
+        "initials": "",
+        "title": "",
+        "description": "SWTrust",
+        "ipAddress1": "",
+        "ipAddress2": "",
+        "ipAddress3": "",
+        "Uri1": "",
+        "Uri2": "",
+        "Uri3": "",
+        "Dns1": "",
+        "Dns2": "",
+        "Dns3": "",
+        "x": 320,
+        "y": 440,
+        "wires": [
+            [
+                "7287406d53358d74",
+                "e8a8665d0bd37aa5"
+            ]
+        ]
+    },
+    {
+        "id": "6d97a2e8d0b083bd",
+        "type": "ejbca-status",
+        "z": "66ee26d0d8292ecc",
+        "name": "",
+        "tls": "faba41230351895c",
+        "ejbcaConfig": "af9996cf595e7843",
+        "x": 270,
+        "y": 220,
+        "wires": [
+            [
+                "d964f51d00545d1b"
+            ]
+        ]
+    },
+    {
+        "id": "bc955f035a933b2e",
+        "type": "inject",
+        "z": "66ee26d0d8292ecc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 100,
+        "y": 220,
+        "wires": [
+            [
+                "6d97a2e8d0b083bd"
+            ]
+        ]
+    },
+    {
+        "id": "d964f51d00545d1b",
+        "type": "debug",
+        "z": "66ee26d0d8292ecc",
+        "name": "Status Message",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ca6a9bb05c58f973",
+        "type": "enroll-pkcs10",
+        "z": "66ee26d0d8292ecc",
+        "name": "",
+        "tls": "faba41230351895c",
+        "ejbcaConfig": "af9996cf595e7843",
+        "username": "",
+        "x": 320,
+        "y": 600,
+        "wires": [
+            [
+                "78b6a849cc18d107"
+            ]
+        ]
+    },
+    {
+        "id": "7287406d53358d74",
+        "type": "create-csr",
+        "z": "66ee26d0d8292ecc",
+        "name": "",
+        "privateKey": "",
+        "x": 310,
+        "y": 520,
+        "wires": [
+            [
+                "ca6a9bb05c58f973",
+                "6c685d4b28405879"
+            ]
+        ]
+    },
+    {
+        "id": "cac84f06288d1609",
+        "type": "generate-keys",
+        "z": "66ee26d0d8292ecc",
+        "name": "",
+        "bitLength": "2048",
+        "x": 320,
+        "y": 360,
+        "wires": [
+            [
+                "1c4bf734a01f9476",
+                "e10370a48b0a6adc"
+            ]
+        ]
+    },
+    {
+        "id": "3cb1e11c453eb374",
+        "type": "inject",
+        "z": "66ee26d0d8292ecc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 360,
+        "wires": [
+            [
+                "cac84f06288d1609"
+            ]
+        ]
+    },
+    {
+        "id": "e10370a48b0a6adc",
+        "type": "debug",
+        "z": "66ee26d0d8292ecc",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "ejbca",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e8a8665d0bd37aa5",
+        "type": "debug",
+        "z": "66ee26d0d8292ecc",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "6c685d4b28405879",
+        "type": "debug",
+        "z": "66ee26d0d8292ecc",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "78b6a849cc18d107",
+        "type": "debug",
+        "z": "66ee26d0d8292ecc",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 600,
+        "wires": []
+    }
+]
