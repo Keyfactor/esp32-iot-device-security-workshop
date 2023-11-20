@@ -1,0 +1,4 @@
+# Name, Type, SubType, Offset, Size, Flags
+nvs,		data,	nvs		    ,0x11000 ,	0x3000,
+factory,	app,	factory	    ,0x20000 ,  3M,
+TrustStore, 	data, 	spiffs      ,,    0x19000,

@@ -1,0 +1,64 @@
+menu "OT Personalisation"
+
+    menu "OT Wifi Network Configuration"
+        config OT_WIFI_SSID
+            string "Production WiFi SSID"
+            default "myssid"
+            help
+                Production SSID (network name) for the device to connect during the inital personalisation process.
+
+        config OT_WIFI_PASSWORD
+            string "Production WiFi Password"
+            default "mypassword"
+            help
+                WiFi password (WPA or WPA2) for your device network.
+        config OT_MAXIMUM_RETRY
+            int "Maximum retry"
+            default 5
+            help
+                Set the Maximum retry to avoid station reconnecting to the AP.
+        config OT_STATIC_IP_ADDR
+            string "Static netmask address"
+            default "192.168.3.240"
+            help
+                Set static IP address.
+        config OT_STATIC_NETMASK_ADDR
+            string "Static netmask address"
+            default "255.255.255.0"
+            help
+                Set static Network Mask 
+        config OT_STATIC_GW_ADDR
+        string "Static gateway address"
+        default "192.168.2.31"
+        help
+            Set static gateway address.
+    endmenu
+
+    menu "CTRL_Computer Configuration"
+        config OT_CTRL_URL
+            string "Address or URL form CTRL Computer: "
+            default "127.0.0.1"
+            help 
+                Please enter the IP address or the URL from you CTRL Computer
+        config OT_CTRL_PORT
+            int "Port Number: "
+            default 1880
+            help 
+                Please enter the Port Number of the CTRL Computer
+    endmenu
+
+    menu "DevID default definition"
+        config OT_DEVID_C
+            string "Country Code (C)"
+            default "D"
+            help
+                Please enter your device ID contry code
+    endmenu
+
+    config OT_WEB_MOUNT_POINT
+        string "Website mount point in VFS"
+        default "/www"
+        help
+            Specify the mount point in VFS.
+
+endmenu
