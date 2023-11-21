@@ -29,7 +29,7 @@ Please follow the Tutorial about the Workshop at: [KeyFactor Community Youtube](
 
 Please use the following feedback channels:
 
-* For a feature request or bug report, create a [KeyFactor Community Youtube](https://www.youtube.com/@KeyfactorCommunity) [GitHub issue](../../issues/new).
+* For a feature request or bug report, create a [GitHub issue](../../issues/new).
 
 We will get back to you as soon as possible.
 
