@@ -23,13 +23,13 @@ Due to the fact that the main IoT Device is working with an OLED Display the Com
 In addition you have to add mbedtls to you project. This is the core crypto-library that is used. 
  
 ## How does it work
-Please follow the Tutorial about the Workshop at :  [KeyFactor Community](https://www.youtube.com/@KeyfactorCommunity)
+Please follow the Tutorial about the Workshop at: [KeyFactor Community Youtube](https://www.youtube.com/@KeyfactorCommunity)
 
 ## Technical support and feedback
 
 Please use the following feedback channels:
 
-* For a feature request or bug report, create a [GitHub issue](https://github.com/Trust-Point/IoT-Device-Security/issues
+* For a feature request or bug report, create a [GitHub issue](../../issues/new).
 
 We will get back to you as soon as possible.
 
