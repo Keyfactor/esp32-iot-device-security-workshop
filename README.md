@@ -21,4 +21,4 @@ The following prerequisites apply:
 Please follow the workshop tutorial on: [KeyFactor Community Youtube](https://www.youtube.com/@KeyfactorCommunity)
 
 ## Technical support and feedback
-For a feature request or bug report, create a [GitHub issue](../../issues/new). We will get back to you as soon as possible.
+If you want to report a bug or request a new feature, please create a [GitHub issue](../../issues/new). We will get back to you as soon as possible.
