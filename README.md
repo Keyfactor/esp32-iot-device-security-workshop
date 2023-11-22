@@ -10,8 +10,7 @@ It consists of four function modules:
 
 * _TrustPlatform.c_ – The trusted storage area that is part of the _SPLIFFS_ file. It is encrypted with an on-demand generated AES Key 
 
-**Note**
-Configuration of the default parameters is done in the _idf.py menuconfig_. 
+**Note:** Configuration of the default parameters is done in the _idf.py menuconfig_. 
 
 ## Prerequisites
 The following prerequisites apply: 
