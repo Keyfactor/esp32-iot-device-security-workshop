@@ -8,7 +8,7 @@ It consists of four function modules:
 
 * _DeviceID.c_ – All functions to generate key material, generate CSR, and store the Device ID in the trusted area
 
-* _TrustPlatform.c_ – The trusted storage area that is part of the _SPLIFFS_ file. It is encrypted with an on-demand generated AES Key 
+* _TrustPlatform.c_ – The trusted storage area that is part of the _SPIFFS_ file. Therefor the SPIFFFS partition has to be part of the partitiontable. The Momory is encrypted with an on-demand generated AES Key. 
 
 **Note:** Configuration of the default parameters is done in the _idf.py menuconfig_. 
 
